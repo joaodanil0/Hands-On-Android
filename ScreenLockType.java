@@ -43,7 +43,12 @@ public enum ScreenLockType {
             "unlock_set_password"),
     MANAGED(
             DevicePolicyManager.PASSWORD_QUALITY_MANAGED,
-            "unlock_set_managed");
+            "unlock_set_managed"),
+
+    SMARTLAMP(
+            DevicePolicyManager.PASSWORD_QUALITY_SMARTLAMP,
+            "unlock_set_smartlamp");
+
 
     /**
      * The default quality of the type of lock used. For example, in the case of PIN, the default
@@ -79,6 +84,8 @@ public enum ScreenLockType {
      */
     public static ScreenLockType fromQuality(int quality) {
         switch (quality) {
+            case DevicePolicyManager.PASSWORD_QUALITY_SMARTLAMP:
+                return ScreenLockType.SMARTLAMP;
             case DevicePolicyManager.PASSWORD_QUALITY_SOMETHING:
                 return ScreenLockType.PATTERN;
             case DevicePolicyManager.PASSWORD_QUALITY_NUMERIC:
