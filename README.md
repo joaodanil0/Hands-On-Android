@@ -81,3 +81,4 @@ Para mais informações ou dúvidas, entre em contato com:
 - GitHub: [seu-usuario](https://github.com/seu-usuario)
 
 Sinta-se à vontade para abrir issues ou enviar pull requests para contribuir com este projeto.
+
