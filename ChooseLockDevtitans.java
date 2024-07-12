@@ -77,9 +77,9 @@ import java.util.List;
  * - asks for confirmation / restart
  * - saves chosen password when confirmed
  */
-public class ChooseLockPattern extends SettingsActivity {
+public class ChooseLockDevtitans extends SettingsActivity {
     /**
-     * Used by the choose lock pattern wizard to indicate the wizard is
+     * Used by the choose lock Devtitans wizard to indicate the wizard is
      * finished, and each activity in the wizard should finish.
      * <p>
      * Previously, each activity in the wizard would finish itself after
@@ -89,7 +89,7 @@ public class ChooseLockPattern extends SettingsActivity {
      */
     public static final int RESULT_FINISHED = RESULT_FIRST_USER;
 
-    private static final String TAG = "ChooseLockPattern";
+    private static final String TAG = "ChooseLockDevtitans";
 
     @Override
     public Intent getIntent() {
@@ -102,7 +102,7 @@ public class ChooseLockPattern extends SettingsActivity {
         private final Intent mIntent;
 
         public IntentBuilder(Context context) {
-            mIntent = new Intent(context, ChooseLockPattern.class);
+            mIntent = new Intent(context, ChooseLockDevtitans.class);
             mIntent.putExtra(ChooseLockGeneric.CONFIRM_CREDENTIALS, false);
         }
 
@@ -449,7 +449,7 @@ public class ChooseLockPattern extends SettingsActivity {
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            if (!(getActivity() instanceof ChooseLockPattern)) {
+            if (!(getActivity() instanceof ChooseLockDevtitans)) {
                 throw new SecurityException("Fragment contained in wrong activity");
             }
             Intent intent = getActivity().getIntent();
