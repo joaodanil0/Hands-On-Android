@@ -4350,6 +4350,7 @@ public class DevicePolicyManager {
      * are ordered so that higher values are more restrictive.
      */
     public static final int PASSWORD_QUALITY_SOMETHING = 0x10000;
+    public static final int PASSWORD_QUALITY_SMARTLAMP = 0X10001;
 
     /**
      * Constant for {@link #setPasswordQuality}: the user must have entered a
@@ -4404,8 +4405,6 @@ public class DevicePolicyManager {
      * @hide
      */
     public static final int PASSWORD_QUALITY_MANAGED = 0x80000;
-
-    public static final int PASSWORD_QUALITY_SMARTLAMP = 0X80001;
 
     /**
      * @hide
