@@ -772,6 +772,23 @@ public class ChooseLockGeneric extends SettingsActivity {
             return builder.build();
         }
 
+        protected Intent getLockSmartLampIntent() {
+            ChooseLockDevtitans.IntentBuilder builder =
+                    new ChooseLockDevtitans.IntentBuilder(getContext())
+                        .setForFingerprint(mForFingerprint)
+                        .setForFace(mForFace)
+                        .setForBiometrics(mForBiometrics)
+                        .setUserId(mUserId)
+                        .setRequestGatekeeperPasswordHandle(mRequestGatekeeperPasswordHandle);
+            if (mUserPassword != null) {
+                builder.setPattern(mUserPassword);
+            }
+            if (mUnificationProfileId != UserHandle.USER_NULL) {
+                builder.setProfileToUnify(mUnificationProfileId, mUnificationProfileCredential);
+            }
+            return builder.build();
+        }
+
         /**
          * Invokes an activity to change the user's pattern, password or PIN based on given quality
          * and minimum quality specified by DevicePolicyManager. If quality is
@@ -836,6 +853,8 @@ public class ChooseLockGeneric extends SettingsActivity {
                 intent = getLockPasswordIntent(quality);
             } else if (quality == DevicePolicyManager.PASSWORD_QUALITY_SOMETHING) {
                 intent = getLockPatternIntent();
+            } else if (quality == DevicePolicyManager.PASSWORD_QUALITY_SMARTLAMP) {
+                intent = getLockSmartLampIntent();
             }
             return intent;
         }
@@ -956,6 +975,7 @@ public class ChooseLockGeneric extends SettingsActivity {
                     case PATTERN:
                     case PIN:
                     case PASSWORD:
+                    case SMARTLAMP:
                     case MANAGED:
                         updateUnlockMethodAndFinish(
                                 lock.defaultQuality,
