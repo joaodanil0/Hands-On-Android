@@ -13,29 +13,28 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
 7. [Contato](#contato)
 
 ## Contribuidores
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
+<img src="assets/bruno.png" width="180" >
+<img src="assets/bezerra.png" width="180" >
+<img src="assets/danilo.png" width="180" >
+<img src="assets/vinicius.png" width="180" >
 <img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
 
 ### Papéis dos Contribuidores
-- **Desenvolvedor 1**
+- **Bruno Negreiros**
   - Pesquisa do código responsável pela tela de desbloqueio
   - Desenvolvimento das alterações em Java
   - Documentação da atividade
 
-- **Desenvolvedor 2**
+- **João Bezerra**
   - Pesquisa do código responsável pela tela de desbloqueio
   - Desenvolvimento das alterações em Java
   - Documentação da atividade
 
-- **Desenvolvedor 3**
+- **João Danilo**
   - Desenvolvimento das alterações em Java
   - Aplicação de patches e testes
 
-- **Desenvolvedor 4**
+- **Vinicius Pereira**
   - Desenvolvimento das alterações em Java
   - Aplicação de patches e testes
 
@@ -77,8 +76,8 @@ Após a compilação, instale a imagem resultante no dispositivo de destino e te
 
 ## Contato
 Para mais informações ou dúvidas, entre em contato com:
-- Email: [seu-email@example.com](mailto:seu-email@example.com)
-- GitHub: [seu-usuario](https://github.com/seu-usuario)
+- Email: [joaodanilo1992@gmail.com](mailto:joaodanilo1992@gmail.com)
+- GitHub: [joaodanil0](https://github.com/joaodanil0)
 
 Sinta-se à vontade para abrir issues ou enviar pull requests para contribuir com este projeto.
 
