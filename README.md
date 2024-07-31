@@ -32,10 +32,12 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
 - **João Danilo**
   - Desenvolvimento das alterações em Java
   - Aplicação de patches e testes
+  - Mantenedor do repositório
 
 - **Vinicius Pereira**
   - Desenvolvimento das alterações em Java
   - Aplicação de patches e testes
+  - Documentação da atividadeDocumentação da atividade
 
 - **Desenvolvedor 5**
   - Pesquisa do código responsável pela tela de desbloqueio
